@@ -1,0 +1,30 @@
+.title {
+  font-size: 290px;
+  font-weight: 700;
+  margin-top: 150px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+.msg-accueil {
+  font-size: 18px;
+  text-decoration: underline;
+  cursor: pointer;
+  margin-top: 150px;
+  transition: 0.2s;
+
+  &:hover {
+    color: #383838;
+  }
+}
+
+.containerror {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: #ff6060;
+}
