@@ -1,0 +1,48 @@
+.cards {
+  background: transparent;
+  width: 340px;
+  height: 340px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  transition: 0.5s;
+  filter: drop-shadow(5px 5px 5px #383838);
+
+  &:hover {
+    transform: scale(1.1);
+    h3 {
+      transform: translate(0%, 50%);
+      overflow: hidden;
+      opacity: 0;
+      height: 0px;
+    }
+    img {
+      border-radius: 10px;
+    }
+  }
+}
+
+.cards img {
+  width: 340px;
+  height: 340px;
+  border-radius: 10px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.cards h3 {
+  position: absolute;
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transition: 0.5s;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0%;
+  text-shadow: 1px 1px 2px black;
+}

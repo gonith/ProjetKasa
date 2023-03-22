@@ -1,0 +1,14 @@
+.container-cards {
+  max-width: 100%;
+  background: #f7f7f7;
+  margin-top: 40px;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 50px;
+}
