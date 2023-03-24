@@ -18,10 +18,13 @@ li {
 }
 
 body {
-  max-width: 1440px;
+  max-width: 90%;
   padding-top: 40px;
   margin: 0 auto;
   @media screen and (max-width: 500px) {
     padding-top: 20px;
+  }
+  @media screen and (min-width: 1500px) {
+
   }
 }

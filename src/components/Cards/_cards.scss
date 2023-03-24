@@ -1,12 +1,21 @@
 .cards {
   background: transparent;
-  width: 340px;
+  width: auto;
   height: 340px;
   border-radius: 25px;
   display: flex;
   flex-direction: column;
   transition: 0.5s;
   filter: drop-shadow(5px 5px 5px #383838);
+  @media screen and (max-width: 1007px) {
+    width: 250px;
+    height: 250px;
+  }
+  @media screen and (max-width: 640px) {
+    width: 100%;
+    margin-bottom: 15px;
+    filter: drop-shadow(0px 0px 0px);
+  }
 
   &:hover {
     transform: scale(1.1);
@@ -28,6 +37,9 @@
   border-radius: 10px;
   object-fit: cover;
   cursor: pointer;
+  @media screen and (max-width: 1007px) {
+    width: auto;
+  }
 }
 
 .cards h3 {
@@ -45,4 +57,7 @@
   align-items: center;
   bottom: 0%;
   text-shadow: 1px 1px 2px black;
+  @media screen and (max-width: 1007px) {
+    font-size: 15px;
+  }
 }

@@ -3,11 +3,11 @@ import "./_landscapeabout.scss";
 
 const LandscapeAbout = () => {
   return (
-    <div className="landscape">
+    <div className="landscape-about">
       <img
         src="./LandscapeAbout.png"
         alt="Terre-inconnue"
-        className="imgland"
+        className="imgland-about"
       />
     </div>
   );

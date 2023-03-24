@@ -14,12 +14,18 @@
     .lgt-title {
       font-size: 25px;
       font-weight: 600;
+      @media screen and (max-width: 1007px) {
+        font-size: 20px;
+      }
     }
 
     .lgt-location {
       font-size: 18px;
       font-weight: 300;
       margin-top: 5px;
+      @media screen and (max-width: 1007px) {
+        font-size: 15px;
+      }
     }
   }
 
@@ -51,12 +57,15 @@
     align-items: center;
 
     .tagsvalue {
-      padding:  5px 25px;
+      padding: 5px 25px;
       background-color: #ff6060;
       margin-right: 15px;
       color: white;
       border-radius: 10px;
       font-size: 15px;
+      @media screen and (max-width: 1007px) {
+        padding: 5px 20px;
+      }
     }
   }
 

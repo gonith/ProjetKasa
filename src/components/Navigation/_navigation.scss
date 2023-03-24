@@ -1,4 +1,9 @@
 .nav {
+  @media screen and (max-width: 640px) {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
   ul {
     display: flex;
     justify-content: flex-end;
@@ -9,6 +14,9 @@
       text-decoration: none;
       padding: 10px;
       margin-right: 20px;
+      @media screen and (max-width: 640px) {
+        margin-right: 0px;
+      }
 
       li {
         color: #ff6060;
@@ -16,6 +24,10 @@
         cursor: pointer;
         transition: 0.2s;
         font-weight: 200;
+        @media screen and (max-width: 640px) {
+          font-size: 14px;
+          text-transform: uppercase;
+        }
 
         &:hover {
           color: #383838;

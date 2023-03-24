@@ -7,6 +7,9 @@
   align-items: center;
   margin-top: 20px;
   border-radius: 20px;
+  @media screen and (max-width: 1007px) {
+    height: 450px;
+  }
 
   .carousel-images {
     width: 100%;
@@ -34,8 +37,16 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-width: 73%;
     z-index: 500;
+    @media screen and (min-width: 768px) {
+      width: 90%;
+    }
+    @media screen and (min-width: 1531px) {
+      width: 90%;
+    }
+    @media screen and (min-width: 1600px) {
+      width: 87%;
+    }
 
     img {
       width: 30px;
@@ -56,3 +67,4 @@
     }
   }
 }
+
