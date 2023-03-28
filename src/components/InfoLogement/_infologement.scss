@@ -5,6 +5,9 @@
   justify-content: space-between;
   color: #ff6060;
   margin-top: 15px;
+  @media screen and (max-width: 640px) {
+    flex-direction: column;
+  }
 
   .scnd-container {
     display: flex;
@@ -84,4 +87,18 @@
     width: 47%;
   }
 
+}
+
+@media screen and (max-width: 640px) {
+  .responsive-phone {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .stars {
+    display: flex;
+    flex-direction: row;
+  }
 }

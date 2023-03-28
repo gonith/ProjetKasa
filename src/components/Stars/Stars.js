@@ -1,6 +1,7 @@
 import React from "react";
 import greystar from "../../assets/img/GreyStar.png";
 import redstar from "../../assets/img/RedStar.png";
+import './_stars.scss'
 
 function Etoiles({ rating }) {
   const etoiles = Array(5).fill(null);
@@ -12,7 +13,7 @@ function Etoiles({ rating }) {
     etoiles[i] = <img src={greystar} alt="grey star" className="insidestars"/>;
   }
 
-  return <div>{etoiles}</div>;
+  return <div className="stars-phone">{etoiles}</div>;
 }
 
 export default Etoiles;

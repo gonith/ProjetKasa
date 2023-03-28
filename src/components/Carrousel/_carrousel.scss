@@ -10,6 +10,10 @@
   @media screen and (max-width: 1007px) {
     height: 450px;
   }
+  @media screen and (max-width: 640px) {
+    margin-top: 15px;
+    height: 350px;
+  }
 
   .carousel-images {
     width: 100%;
@@ -38,15 +42,19 @@
     align-items: center;
     justify-content: space-between;
     z-index: 500;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 641px) {
       width: 90%;
     }
     @media screen and (min-width: 1531px) {
       width: 90%;
     }
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 1532px) {
       width: 87%;
     }
+    @media screen and (max-width: 640px) {
+      width: 90%;
+    }
+
 
     img {
       width: 30px;
@@ -59,11 +67,19 @@
     img:first-child {
       width: 40px;
       height: 70px;
+      @media screen and (max-width: 640px) {
+        width: 20px;
+        height: 35px;
+      }
     }
 
     img:last-child {
       width: 40px;
       height: 70px;
+      @media screen and (max-width: 640px) {
+        width: 20px;
+        height: 35px;
+      }
     }
   }
 }
