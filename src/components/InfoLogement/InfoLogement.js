@@ -15,39 +15,38 @@ const InfoLogement = () => {
 
   return (
     <>
-    <div className="responsive-phone">
-    <div className="first-container">
-        <div className="scnd-container">
+      <div className="global-container">
+        <div className="first-container">
           <h2 className="lgt-title">{logementValue.title}</h2>
           <h3 className="lgt-location">{logementValue.location}</h3>
+
+          <div className="contain-tags">
+            {logementValue.tags.map((tag, index) => {
+              return (
+                <p key={index} className="tagsvalue">
+                  {tag}
+                </p>
+              );
+            })}
+          </div>
         </div>
 
-        <div className="third-container">
-          <h3 className="name-proprio">{logementValue.host.name}</h3>
-          <img
-            src={logementValue.host.picture}
-            alt="Photo-propriétaire"
-            className="photo"
-          />
+        <div className="scnd-container">
+          <div className="name-pic">
+            <h3 className="name-proprio">{logementValue.host.name}</h3>
+            <img
+              src={logementValue.host.picture}
+              alt="Photo-propriétaire"
+              className="photo"
+            />
+          </div>
+
+          <div className="stars">
+            <Etoiles rating={logementValue.rating} />
+          </div>
         </div>
       </div>
 
-      <div className="contain-tags-stars">
-        <div className="scnd-tags">
-          {logementValue.tags.map((tag, index) => {
-            return (
-              <p key={index} className="tagsvalue">
-                {tag}
-              </p>
-            );
-          })}
-        </div>
-        <div className="stars">
-          <Etoiles rating={logementValue.rating} />
-        </div>
-      </div>
-    </div>
-     
       <div className="collapse-lgt">
         <Collapse
           key="collapse1"

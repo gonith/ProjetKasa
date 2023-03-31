@@ -11,7 +11,7 @@ const Error = () => {
       <main>
         <div className="containerror">
           <h1 className="title">404</h1>
-          <h2>Oups! La page que vous demandez n'existe pas.</h2>
+          <h2 className="scndtitle">Oups! La page que vous demandez n'existe pas.</h2>
           <NavLink to="/">
             <p className="msg-accueil">Retourner sur la page d'accueil</p>
           </NavLink>
