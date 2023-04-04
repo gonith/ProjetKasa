@@ -4,3 +4,10 @@
         flex-direction: row;
     }
 }
+
+.stars {
+    margin-top: 12px;
+    @media screen and (max-width: 1007px) {
+        margin-top: 0px;
+    }
+}

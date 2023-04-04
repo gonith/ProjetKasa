@@ -10,6 +10,7 @@ const InfoLogement = () => {
   const logementValue = datas.find((element) => element.id === id);
   const etoiles = Array.from({ length: 5 }, () => {});
 
+  console.log(logementValue)
   console.log(logementValue.tags);
   console.log(logementValue.rating);
 
