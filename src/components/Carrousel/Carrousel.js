@@ -12,19 +12,15 @@ const Carrousel = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const nextPic = () => {
-    setCurrentImageIndex(
-      currentImageIndex === logementValue.pictures.length - 1
-        ? 0
-        : currentImageIndex + 1
-    );
+    setCurrentImageIndex(currentImageIndex + 1)
+    if (currentImageIndex === logementValue.pictures.length - 1)
+        setCurrentImageIndex(0);
   };
 
   const prevPic = () => {
-    setCurrentImageIndex(
-      currentImageIndex === 0
-        ? logementValue.pictures.length - 1
-        : currentImageIndex - 1
-    );
+    setCurrentImageIndex(currentImageIndex - 1)
+        if(currentImageIndex === 0)
+            setCurrentImageIndex(logementValue.pictures.length - 1)
   };
 
   return (
@@ -41,6 +37,7 @@ const Carrousel = () => {
       </div>
         <div className="carousel-buttons">
           <img src={arrowLeft} alt="Previous" onClick={prevPic} />
+          <p className="slideCount">{currentImageIndex + 1} / {logementValue.pictures.length}</p>
           <img src={arrowRight} alt="Next" onClick={nextPic} />
         </div>
     </div>

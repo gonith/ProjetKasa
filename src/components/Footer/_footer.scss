@@ -10,5 +10,8 @@
   h3 {
     color: white;
     margin-top: 30px;
+    @media screen and (max-width: 640px) {
+      font-size: 15px;
+    }
   }
 }

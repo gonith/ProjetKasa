@@ -41,24 +41,22 @@
 
   .carousel-buttons {
     position: absolute;
-    height: auto;
+    height: 550px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     z-index: 500;
-    @media screen and (min-width: 641px) {
+    @media screen and (min-width: 641px) and (max-width: 1007px) {
       width: 90%;
+      height: 450px;
     }
-    @media screen and (min-width: 1531px) {
+    @media screen and (min-width: 1008px) {
       width: 90%;
-    }
-    @media screen and (min-width: 1532px) {
-      width: 87%;
     }
     @media screen and (max-width: 640px) {
       width: 90%;
+      height: 350px;
     }
-
 
     img {
       width: 30px;
@@ -75,6 +73,15 @@
         width: 20px;
         height: 35px;
       }
+    }
+
+    .slideCount {
+      color: white;
+      font-size: 15px;
+      height: 95%;
+      display: flex;
+      align-items: end;
+      filter: drop-shadow(0px 0px 2px #383838);
     }
 
     img:last-child {
