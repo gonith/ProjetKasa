@@ -1,11 +1,12 @@
 import React from "react";
 import "./_landscapeabout.scss";
+import { landscapeabout } from "../../images/LandscapeAbout.png";
 
 const LandscapeAbout = () => {
   return (
     <div className="landscape-about">
       <img
-        src="./LandscapeAbout.png"
+        src={landscapeabout}
         alt="Terre-inconnue"
         className="imgland-about"
       />

@@ -1,6 +1,6 @@
 import React from "react";
 import "./_landscape.scss";
-import { imglandscape } from "../../../public/IMG.png";
+import { imglandscape } from "../../images/IMG.png";
 
 const Landscape = () => {
   return (
