@@ -1,6 +1,6 @@
 import React from "react";
 import "./_landscapeabout.scss";
-import { imgabout } from "../../images/LandscapeAbout.png";
+import imgabout from "../../images/LandscapeAbout.png";
 
 const LandscapeAbout = () => {
   return (
