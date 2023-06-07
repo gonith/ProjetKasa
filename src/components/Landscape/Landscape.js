@@ -1,10 +1,11 @@
 import React from "react";
 import "./_landscape.scss";
+import { imglandscape } from "../../../public/IMG.png";
 
 const Landscape = () => {
   return (
     <div className="landscape">
-      <img src="./IMG.png" alt="Terre-inconnue" className="imgland" />
+      <img src={imglandscape} alt="Terre-inconnue" className="imgland" />
       <div className="textland">
         <p>Chez vous, partout et ailleurs</p>
       </div>
