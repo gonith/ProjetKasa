@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/ProjetKasa/static/css/main.d573e524.css",
-    "main.js": "/ProjetKasa/static/js/main.22f25531.js",
+    "main.js": "/ProjetKasa/static/js/main.9dbf9dde.js",
     "static/media/LandscapeAbout.png": "/ProjetKasa/static/media/LandscapeAbout.640955dab8c7bff25514.png",
     "static/media/IMG.png": "/ProjetKasa/static/media/IMG.19221376a0aa2549c135.png",
     "static/media/Montserrat-Medium.ttf": "/ProjetKasa/static/media/Montserrat-Medium.c86e3b9010ff63c99166.ttf",
     "index.html": "/ProjetKasa/index.html",
     "main.d573e524.css.map": "/ProjetKasa/static/css/main.d573e524.css.map",
-    "main.22f25531.js.map": "/ProjetKasa/static/js/main.22f25531.js.map"
+    "main.9dbf9dde.js.map": "/ProjetKasa/static/js/main.9dbf9dde.js.map"
   },
   "entrypoints": [
     "static/css/main.d573e524.css",
-    "static/js/main.22f25531.js"
+    "static/js/main.9dbf9dde.js"
   ]
 }
